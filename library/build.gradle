@@ -1,5 +1,22 @@
 apply plugin: 'com.android.library'
 apply plugin: 'maven'
+apply plugin: 'maven-publish'
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'com.github.karthikkompelli'
+            artifactId = 'MultiWaveHeader'
+            version = "1.0.0"
+            pom {
+                description = 'MultiWaveHeader'
+            }
+        }
+    }
+    repositories {
+        mavenLocal()
+    }
+}
 
 android {
     compileSdkVersion 28

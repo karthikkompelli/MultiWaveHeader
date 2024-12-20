@@ -28,11 +28,11 @@ publishing {
 }
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 34
 
     defaultConfig {
         minSdkVersion 12
-        targetSdkVersion 28
+        targetSdkVersion 34
         versionCode 1
         versionName "1.0"
 
@@ -46,7 +46,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-
+    namespace 'com.scwang.wave.library'
 }
 
 dependencies {

@@ -40,7 +40,7 @@ class FragmentActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        mFragmentClazz = intent.getStringExtra(EXTRA_FRAGMENT)
+        mFragmentClazz = intent.getStringExtra(EXTRA_FRAGMENT).toString()
         val frameLayout = FrameLayout(this)
         frameLayout.id = widget_frame
         setContentView(frameLayout)

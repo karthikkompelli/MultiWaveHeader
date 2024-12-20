@@ -26,6 +26,8 @@ import java.util.List;
 
 import static java.lang.Float.parseFloat;
 
+import com.scwang.wave.library.R;
+
 /**
  * 多重水波纹
  * Created by SCWANG on 2017/12/11.
